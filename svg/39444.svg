@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="natnerd-39444" viewBox="0 0 200 200" style="width: 200px; height: 200px;"><defs><pattern id="pattern_39444" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(0)"><rect x="0" y="0" width="200" height="200" stroke="none" fill="#85144b"></rect><line x1="0" y1="0" x2="200" y2="0" stroke="#ffffff" stroke-width="3"></line></pattern></defs><path stroke="#000000" stroke-width="2" transform="translate(50, 133.33333333333331)" fill="url(#pattern_39444)" d="
+        M10.81081081081081,0
+        h78.37837837837839
+        a10.81081081081081,10.81081081081081 0 0 1 10.81081081081081,10.81081081081081
+        v58.37837837837838
+        a10.81081081081081,10.81081081081081 0 0 1 -10.81081081081081,10.81081081081081
+        h-78.37837837837839
+        a10.81081081081081,10.81081081081081 0 0 1 -10.81081081081081,-10.81081081081081
+        v-58.37837837837838
+        a10.81081081081081,10.81081081081081 0 0 1 10.81081081081081,-10.81081081081081
+        z
+    "></path><line x1="70" y1="200" x2="70" y2="160" stroke="#000000" stroke-width="2"></line><line x1="130" y1="200" x2="130" y2="160" stroke="#000000" stroke-width="2"></line><circle id="head-39444" cx="100" cy="80" r="66.66666666666667" fill="#ffffff"></circle><circle cx="80" cy="60" r="7.000000000000001" fill="#000000"></circle><circle cx="76.81818181818181" cy="56.81818181818182" r="1.7500000000000002" fill="white"></circle><circle cx="120" cy="60" r="7.000000000000001" fill="#000000"></circle><circle cx="116.81818181818181" cy="56.81818181818182" r="1.7500000000000002" fill="white"></circle><circle cx="100" cy="108.16901408450704" r="6.666666666666667" fill="#000000"></circle><circle id="head-39444-stroke" cx="100" cy="80" r="66.66666666666667" fill="none" stroke-width="4" stroke="#000000"></circle></svg>
