@@ -42,7 +42,7 @@ const showItems = page => {
         let { id } = item
 
         html += `
-            <li title="Natnerd #${id}">
+            <li title="N4TN3RD5 #${id}">
                 <div class="natnerd">
                     <img class="img" src="./img/${id}.png" data-bs-toggle="modal" data-bs-target="#modal" data-natnerd-id="${id}">
                     <span class="h6"><a href="./svg/${id}.svg" target="_blank">${id}</a></span>
@@ -59,10 +59,10 @@ const showItems = page => {
 }
 
 const setAmount = () => {
-    filteredAmount.innerHTML = `Result: ${natnerds_result.length} Natnerds`
+    filteredAmount.innerHTML = `Result: ${natnerds_result.length} N4TN3RD5`
 
     if(params_natnerds.length) {
-        filteredAmount.innerHTML += ` <button id="remove_preselected" class="btn btn-danger ms-3">show all natnerds</button>`
+        filteredAmount.innerHTML += ` <button id="remove_preselected" class="btn btn-danger ms-3">show all N4TN3RD5</button>`
 
         document.querySelector('#remove_preselected').addEventListener('click', e => {
             e.preventDefault()
@@ -140,12 +140,12 @@ const updatePaginationNav = () => {
         
         if(currentPage > 3) {
             html += `<li class="page-item">
-                <a class="page-link" href="#">..</a>
+                <a class="page-link">..</a>
             </li>`
             
             if(currentPage > numberOfPages - 3) {
                 html += `<li class="page-item">
-                    <a class="page-link" href="#">..</a>
+                    <a class="page-link">..</a>
                 </li>`
             }
 
@@ -165,13 +165,13 @@ const updatePaginationNav = () => {
             </li>`
            
             html += `<li class="page-item">
-                <a class="page-link" href="#">..</a>
+                <a class="page-link">..</a>
             </li>`
         }
 
         if(currentPage < numberOfPages-2) {
             html += `<li class="page-item">
-                <a class="page-link" href="#">..</a>
+                <a class="page-link">..</a>
             </li>`
         }
 
@@ -375,7 +375,7 @@ const setupModal = () => {
                     html += '</div>'
 
                     html += '</div>'
-                    modalTitle.textContent = `Natnerd #${nerdId}`
+                    modalTitle.textContent = `N4TN3RD5 #${nerdId}`
                     modalBody.innerHTML = html
                 }
             })
