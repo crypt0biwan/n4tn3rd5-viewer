@@ -1,4 +1,5 @@
 let natnerds = []
+let inscriptions = []
 let filtered_natnerds = []
 let natnerds_result = []
 let filter_choices = []
@@ -350,13 +351,19 @@ const setupModal = () => {
                     const modalTitle = modal.querySelector('.modal-title')
                     const modalBody = modal.querySelector('.modal-body')
 
+                    const inscription = inscriptions.find(i => i.id === nerdId)
+
                     let html = '<div class="row">'
                     html += '<div class="col-12 col-md-4 mb-4 mb-md-0">'
                     html += `<img src="./svg/${nerdId}.svg" style="width: 100%" />`
 
-                    // html += '<div class="d-grid gap-2 pt-3">'
-                    // html += `<a href="" target="_blank" class="btn btn-primary">View on nerdgy.market</a>`
-                    // html += '</div>'
+                    html += '<div class="d-grid gap-2 pt-3">'
+                    if(inscription) {
+                        // html += `<a href="https://magiceden.io/ordinals/item-details/${inscription.inscription}" target="_blank" class="btn btn-magiceden">View on MagicEden</a>`
+                    }
+                    html += `<a href="./svg-generator?n4tn3rd5=${nerdId}" target="_blank" class="btn btn-primary">Generate High-res pfp img</a>`
+                    html += '</div>'
+
                     html += '</div>'
 
                     html += '<div class="col-12 col-md-8">'
@@ -387,7 +394,8 @@ const setupModal = () => {
 
 const init = async () => {
     try {
-        natnerds = await fetch('./traits.json?ts=1708880751776').then(res=>res.json()).catch(e=>console.log(e))
+        natnerds = await fetch('./data/traits.json?ts=1720190682929').then(res=>res.json()).catch(e=>console.log(e))
+        inscriptions = await fetch('./data/inscriptions.json?ts=1720190682929').then(res=>res.json()).catch(e=>console.log(e))
 
         if(params_natnerds.length) {
             filtered_natnerds = natnerds.filter(n => params_natnerds.includes(n.id.toString()))
