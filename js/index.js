@@ -18,7 +18,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
 })
 
-let params_natnerds = params && params.natnerds ? params.natnerds.split(',') : []
+let params_natnerds = params && params.n4tn3rd5 ? params.n4tn3rd5.split(',') : []
 
 const setActivePage = page => {
     // reset all active states first
@@ -397,8 +397,8 @@ const init = async () => {
         natnerds = await fetch('./data/traits.json?ts=1720190682929').then(res=>res.json()).catch(e=>console.log(e))
         inscriptions = await fetch('./data/inscriptions.json?ts=1720190682929').then(res=>res.json()).catch(e=>console.log(e))
 
-        if(params_natnerds.length) {
-            filtered_natnerds = natnerds.filter(n => params_natnerds.includes(n.id.toString()))
+        if(params_n4tn3rd5.length) {
+            filtered_natnerds = natnerds.filter(n => params_n4tn3rd5.includes(n.id.toString()))
         } else {
             filtered_natnerds = natnerds
         }
