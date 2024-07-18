@@ -18,7 +18,7 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
     get: (searchParams, prop) => searchParams.get(prop),
 })
 
-let params_natnerds = params && params.n4tn3rd5 ? params.n4tn3rd5.split(',') : []
+let params_n4tn3rd5 = params && params.n4tn3rd5 ? params.n4tn3rd5.split(',') : []
 
 const setActivePage = page => {
     // reset all active states first
