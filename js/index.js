@@ -62,13 +62,13 @@ const showItems = page => {
 const setAmount = () => {
     filteredAmount.innerHTML = `Result: ${natnerds_result.length} N4TN3RD5`
 
-    if(params_natnerds.length) {
+    if(params_n4tn3rd5.length) {
         filteredAmount.innerHTML += ` <button id="remove_preselected" class="btn btn-danger ms-3">show all N4TN3RD5</button>`
 
         document.querySelector('#remove_preselected').addEventListener('click', e => {
             e.preventDefault()
 
-            params_natnerds = []
+            params_n4tn3rd5 = []
             window.history.pushState('', '', `?natnerds=`)
 
             filtered_natnerds = natnerds
